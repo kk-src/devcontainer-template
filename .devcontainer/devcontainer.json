@@ -1,0 +1,11 @@
+{
+    "image":"mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "customizations": {
+        "vscode": {
+            "extensions": [ "ms-vscode.cpptools-extension-pack", "ms-vscode.hexeditor" ]
+        }
+    },
+    "remoteUser": "pg-dev",
+    "postCreateCommand": "bash -i scripts/install-dependencies.sh",
+    "runArgs": [ "--cap-add=SYS_PTRACE", "--cap-add=SYS_ADMIN", "--ulimit", "core=-1"]
+}
