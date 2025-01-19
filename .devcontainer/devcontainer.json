@@ -1,12 +1,13 @@
 {
-    "image":"mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+   "name": "Develop",
+    "build": { 
+        "dockerfile": "Dockerfile"
+    },
     "customizations": {
         "vscode": {
             "extensions": [ "ms-vscode.cpptools-extension-pack", "ms-vscode.hexeditor" ]
         }
     },
     "remoteUser": "pg-dev",
-    "initializeCommand": "bash -i scripts/add-user.sh",
-    "postCreateCommand": "bash -i scripts/install-dependencies.sh",
     "runArgs": [ "--cap-add=SYS_PTRACE", "--cap-add=SYS_ADMIN", "--ulimit", "core=-1"]
 }
