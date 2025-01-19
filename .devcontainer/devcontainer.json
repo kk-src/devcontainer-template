@@ -5,7 +5,10 @@
     },
     "customizations": {
         "vscode": {
-            "extensions": [ "ms-vscode.cpptools-extension-pack", "ms-vscode.hexeditor" ]
+            "extensions": [ 
+                "ms-vscode.cpptools-extension-pack", 
+                "ms-vscode.hexeditor",
+                "ms-vscode.python" ]
         }
     },
     "remoteUser": "pg-dev",
