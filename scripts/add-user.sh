@@ -1,2 +1,2 @@
-sudo useradd -ms /bin/bash pg-dev
-sudo usermod -aG sudo pg-dev
+useradd -ms /bin/bash pg-dev
+usermod -aG sudo pg-dev
