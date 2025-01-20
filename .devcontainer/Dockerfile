@@ -3,6 +3,7 @@ RUN apt-get update && \
     apt-get install -y  \
     libreadline-dev zlib1g-dev libxml2-dev libxslt-dev \ 
     libssl-dev libxml2-utils libc-dev libipc-run-perl \ 
+    python3 python3-poetry \
     build-essential xsltproc flex bison ccache meson gdb vim
 RUN useradd -ms /bin/bash pg-dev && \
     usermod -aG sudo pg-dev
