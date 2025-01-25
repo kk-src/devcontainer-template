@@ -6,5 +6,6 @@ RUN apt-get update && \
     python3 python3-poetry \
     build-essential xsltproc flex bison ccache meson gdb vim
 RUN useradd -ms /bin/bash pg-dev && \
-    usermod -aG sudo pg-dev
+    echo pg-dev ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/pg-dev && \
+    chmod 0440 /etc/sudoers.d
 USER pg-dev
